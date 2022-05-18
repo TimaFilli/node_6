@@ -1,0 +1,24 @@
+scalar Date
+scalar Link
+scalar Token
+scalar Upload
+
+enum Gender {
+    male
+    female
+}
+
+union MainType = User | Category | Permission
+
+type AuthResponse {
+    status: Int!
+    message: String!
+    data: User
+    token: Token
+}
+
+type Response {
+    status: Int!
+    message: String!
+    data: MainType
+}

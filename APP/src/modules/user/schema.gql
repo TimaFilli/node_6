@@ -1,0 +1,23 @@
+type Query {
+    users: [User]!
+}
+
+type Mutation {
+    login(username: String! password: String!): AuthResponse!
+    
+    register(
+        profile: Upload!
+        username: String!
+        password: String!
+        birthDate: Date!
+        gender: Gender!
+    ): AuthResponse!
+}
+
+type User {
+    userId: ID!
+    username: String!
+    birthDate: Date!
+    profile: Link!
+    gender: Gender!
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "permissionId": 1,
+        "permissionModule": "category",
+        "userId": 1,
+        "read": false,
+        "write": false,
+        "delete": false,
+        "update": false
+    },
+    {
+        "permissionId": 2,
+        "permissionModule": "product",
+        "userId": 1,
+        "read": true,
+        "write": true,
+        "delete": true,
+        "update": true
+    },
+    {
+        "permissionId": 3,
+        "permissionModule": "permission",
+        "userId": 2,
+        "read": true,
+        "write": true,
+        "delete": true,
+        "update": true
+    },
+    {
+        "permissionId": 4,
+        "permissionModule": "permission",
+        "userId": 1,
+        "read": false,
+        "write": false,
+        "delete": false,
+        "update": false
+    }
+]

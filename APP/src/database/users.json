@@ -1,0 +1,18 @@
+[
+    {
+        "userId": 1,
+        "username": "alisher",
+        "password": "6e656676e46fbe15e5f74882aff541c6707547014580543ed6040ac7f17a6880",
+        "gender": "male",
+        "birthDate": "1990-10-11",
+        "profile": "alisher.jpg"
+    },
+    {
+        "userId": 2,
+        "password": "6e656676e46fbe15e5f74882aff541c6707547014580543ed6040ac7f17a6880",
+        "profile": "1652354726491164941853096916494185181946231694185885607703.jpg",
+        "birthDate": "1990-11-11",
+        "username": "alijon",
+        "gender": "male"
+    }
+]

@@ -1,0 +1,42 @@
+type Query {
+    permissionActions: [PermissionAction!]!
+    permissionModules: [PermissionModule!]!
+    permissions(userId: ID): [Permission]!
+}
+
+type Mutation {
+    addPermission(
+        userId: ID! 
+        module: PermissionModule! 
+        actions: [PermissionAction!]!
+    ): Response!
+
+    deletePermission(
+        userId: ID! 
+        module: PermissionModule!
+        actions: [PermissionAction!]!
+    ): Response!
+}
+
+type Permission {
+    permissionId: ID!
+    permissionModule: String!
+    delete: Boolean!
+    update: Boolean!
+    write: Boolean!
+    read: Boolean!
+    user: User!
+}
+
+enum PermissionAction {
+    delete
+    update
+    read
+    write
+}
+
+enum PermissionModule {
+    category
+    product
+    permission
+}
